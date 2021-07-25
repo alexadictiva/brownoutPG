@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  --fontBase: "Poppins", sans-serif;
+
+  --headLine1: bold 3.4rem/5rem var(--fontBase);
+  --headLine2: bold 2.4rem/3rem var(--fontBase);
+  --headLine3: normal 2.4rem/3.9rem var(--fontBase);
+  --body1: normal 1.6rem/2.6rem var(--fontBase);
+  --body2: bold 1.6rem/2.6rem var(--fontBase);
+  --body3: normal 1.4rem/2.3rem var(--fontBase);
+  --button: bold 1.5rem/2rem var(--fontBase);
+  --caption: normal 1.3rem/2.3rem var(--fontBase);
+  --bgColorPrimary: #0e1c61;
+  --bgColorSecondary: #efb810;
+  --fontColorPrimary: black;
+  --fontColorSecondary: white;
+  --white: #ffffff;
+  --black: #000000;
+}
+body {
+  overflow-x: hidden;
+  background: var(--white);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: var(--body1);
+  color: var(--black);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font: var(--headLine1);
+}
+h2 {
+  font: var(--headLine2);
+}
+
+h5 {
+  font: var(--caption);
+}
+.bgBlue {
+  background-color: var(--bgColorPrimary);
+}
+.bgYellow {
+  background-color: var(--bgColorSecondary);
+}
+/*header*/
+
+/*Banner slider*/
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+.swiper-slide {
+  text-align: center;
+  background: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*About Container*/
+.aboutContainer {
+  background-color: var(--bgColorPrimary);
+  color: var(--fontColorSecondary);
+}
+/*slogan*/
+.sloganContainer {
+  background: grey;
+}
+.sloganImage img {
+  width: 150px;
+}
+.sloganContent .sloganDescription {
+  order: 2;
+}
+.sloganContent .sloganImage {
+  order: 1;
+}
+
+/*why us container*/
+/*founder container*/
+.founderContainer .card .row .col-md-8 {
+  order: 2;
+}
+.founderContainer .card .row .col-md-4 {
+  order: 1;
+}
+
+/*testimony container*/
+.testimonyContainer {
+  color: var(--fontColorSecondary);
+}
+.testimonyUser {
+  width: 100px;
+}
+.bold {
+  font: var(--body2);
+}
+.italic {
+  font-style: italic;
+}
+
+/*button cash*/
+
+.ctaButton {
+  width: 300px;
+}
+.btnGetCash {
+  color: var(--fontColorSecondary);
+  cursor: pointer;
+}
+.ctaButtonImg img {
+  width: 50px;
+}
+.ctaButtonDescription p:nth-child(1) {
+  font: var(--button);
+  text-transform: uppercase;
+}
+.ctaButtonDescription p:nth-child(2) {
+  font: var(--caption);
+}
+@media screen and (min-width: 768px) {
+  .sloganContent .sloganDescription {
+    order: 1;
+  }
+  .sloganContent .sloganImage {
+    order: 2;
+  }
+
+  /*founder container*/
+  .founderContainer .card .row .col-md-8 {
+    order: 1;
+  }
+  .founderContainer .card .row .col-md-4 {
+    order: 2;
+  }
+}
