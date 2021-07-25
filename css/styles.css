@@ -7,7 +7,6 @@
   scroll-behavior: smooth;
   font-size: 62.5% !important;
   --fontBase: "Poppins", sans-serif;
-
   --headLine1: bold 3.4rem/5rem var(--fontBase);
   --headLine2: bold 2.4rem/3rem var(--fontBase);
   --headLine3: normal 2.4rem/3.9rem var(--fontBase);
@@ -16,20 +15,21 @@
   --body3: normal 1.4rem/2.3rem var(--fontBase);
   --button: bold 1.5rem/2rem var(--fontBase);
   --caption: normal 1.3rem/2.3rem var(--fontBase);
-  --bgColorPrimary: #0e1c61;
-  --bgColorSecondary: #efb810;
-  --fontColorPrimary: black;
-  --overlay: rgba(0, 0, 0, 0.5);
+  --bgColorPrimary: #0f3b6f;
+  --bgColorSecondary: #e1cc0f;
+  --fontColorPrimary: rgb(72, 72, 72);
   --fontColorSecondary: white;
+  --fontColorTertiary: #0f3b6f;
+  --overlay: rgba(0, 0, 0, 0.5);
   --white: #ffffff;
   --black: #000000;
 }
 body {
   overflow-x: hidden;
   background: var(--white);
+  color: var(--fontColorPrimary);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font: var(--body1);
-  color: var(--black);
 }
 img {
   max-width: 100%;
@@ -40,6 +40,7 @@ h1 {
 }
 h2 {
   font: var(--headLine2);
+  color: var(--fontColorTertiary);
 }
 
 h5 {
@@ -93,30 +94,21 @@ h5 {
   height: 100%;
   object-fit: cover;
 }
-/*About Container*/
-.aboutContainer {
-  background-color: var(--bgColorPrimary);
-  color: var(--fontColorSecondary);
-}
+
 /*slogan*/
-.sloganContainer {
-  background: grey;
+.sloganContent {
+  flex-direction: column;
 }
-.sloganImage img {
-  width: 150px;
+.sloganContent h2 {
+  color: var(--white);
 }
-.sloganContent .sloganDescription {
-  order: 2;
-}
-.sloganContent .sloganImage {
-  order: 1;
+.sloganContent div h5 {
+  color: var(--white);
+  font-weight: bold;
 }
 
 /*how to 1 container*/
-.howTo1Container {
-  background: var(--bgColorPrimary);
-  color: var(--fontColorSecondary);
-}
+
 /*founder container*/
 .founderContainer .card .row .col-md-8 {
   order: 2;
@@ -126,9 +118,7 @@ h5 {
 }
 
 /*testimony container*/
-.testimonyContainer {
-  color: var(--fontColorSecondary);
-}
+
 .testimonyUser {
   width: 100px;
 }
@@ -156,11 +146,16 @@ h5 {
   font: var(--caption);
 }
 @media screen and (min-width: 768px) {
-  .sloganContent .sloganDescription {
-    order: 1;
+  .sloganContent {
+    flex-direction: row;
   }
-  .sloganContent .sloganImage {
+  .sloganContent div {
     order: 2;
+    width: 20%;
+  }
+  .sloganContent h2 {
+    order: 1;
+    width: 70%;
   }
 
   /*founder container*/
