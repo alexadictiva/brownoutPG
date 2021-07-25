@@ -5,7 +5,7 @@
 }
 :root {
   scroll-behavior: smooth;
-  font-size: 62.5%;
+  font-size: 62.5% !important;
   --fontBase: "Poppins", sans-serif;
 
   --headLine1: bold 3.4rem/5rem var(--fontBase);
@@ -19,6 +19,7 @@
   --bgColorPrimary: #0e1c61;
   --bgColorSecondary: #efb810;
   --fontColorPrimary: black;
+  --overlay: rgba(0, 0, 0, 0.5);
   --fontColorSecondary: white;
   --white: #ffffff;
   --black: #000000;
@@ -53,13 +54,24 @@ h5 {
 /*header*/
 
 /*Banner slider*/
+.bannerContainer {
+  height: 100vh;
+}
+.bannerContent {
+  z-index: 10;
+  height: 100%;
+  background-color: var(--overlay);
+  color: var(--fontColorSecondary);
+}
+.bannerContent .row {
+  height: 100%;
+}
 .swiper-container {
   width: 100%;
   height: 100vh;
 }
 .swiper-slide {
   text-align: center;
-  background: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -124,9 +136,6 @@ h5 {
 
 /*button cash*/
 
-.ctaButton {
-  width: 300px;
-}
 .btnGetCash {
   color: var(--fontColorSecondary);
   cursor: pointer;
