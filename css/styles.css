@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 :root {
   scroll-behavior: smooth;
   font-size: 62.5% !important;
-  --fontBase: "Poppins", sans-serif;
+  --fontBase: "Inter", sans-serif;
   --headLine1: bold 3.4rem/5rem var(--fontBase);
   --headLine2: bold 2.4rem/3rem var(--fontBase);
   --headLine3: normal 2.4rem/3.9rem var(--fontBase);
@@ -26,10 +28,8 @@
 }
 body {
   overflow-x: hidden;
-
   background: var(--white);
   color: var(--fontColorPrimary);
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font: var(--body1);
 }
 .wrapperMain {
