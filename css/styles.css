@@ -63,7 +63,8 @@ h5 {
   background-color: var(--overlay);
   color: var(--fontColorSecondary);
 }
-.bannerContent .row {
+.bannerContent .container,
+.bannerContent .container .row {
   height: 100%;
 }
 .swiper-container {
@@ -111,7 +112,11 @@ h5 {
   order: 1;
 }
 
-/*why us container*/
+/*how to 1 container*/
+.howTo1Container {
+  background: var(--bgColorPrimary);
+  color: var(--fontColorSecondary);
+}
 /*founder container*/
 .founderContainer .card .row .col-md-8 {
   order: 2;
