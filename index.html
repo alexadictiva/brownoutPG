@@ -17,12 +17,112 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-
     <title>BrownoutPG</title>
   </head>
-  <body>
-    <header></header>
+  <body class="d-flex justify-content-center">
+    <div class="screen-darken"></div>
     <div class="wrapperMain">
+      <header class="section-header bgBlue px-4">
+        <section>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-lg-none">
+              <img
+                src="./assets/BPG Logo Full.png"
+                class="img-fluid logo"
+                alt="Logo"
+              />
+            </div>
+            <button class="menuButton" data-trigger="navbar_main" type="button">
+              Menu
+            </button>
+          </div>
+          <nav
+            id="navbar_main"
+            class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bgBlue"
+          >
+            <div class="container-fluid">
+              <div class="offcanvas-header">
+                <button class="btn-close float-end"></button>
+              </div>
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./assets/BPG Logo Full.png"
+                  alt="Logo"
+                  class="img-fluid"
+                />
+              </a>
+
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">HOME </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about"> WHY US </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#howto"> HOW IT WORKS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimony"> TESTOMONY </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact"> CONTACT </a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  DROPDOWN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Submenu item 2 </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Submenu item 3 </a>
+                  </li>
+                </ul>
+              </li> -->
+              </ul>
+              <div class="d-none d-lg-block">
+                <img
+                  src="./assets/BPG Logo Full.png"
+                  class="img-fluid logo"
+                  alt="Logo"
+                />
+              </div>
+              <!-- <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Menu item </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Menu item </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  Dropdown right
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Submenu item 2 </a>
+                  </li>
+                </ul>
+              </li>
+            </ul> -->
+            </div>
+            
+          </nav>
+        </section>
+      </header>
+
       <main>
         <section class="bannerContainer position-relative">
           <div class="swiper-container mySwiper position-absolute">
@@ -80,7 +180,7 @@
             </div>
           </div>
         </section>
-        <section class="aboutContainer container p-5">
+        <section class="aboutContainer container p-5" id="about">
           <h2 class="text-center m-5">GET CASH OFFER SELL A HOUSE AS IS</h2>
           <div class="aboutContent row">
             <div class="col-12 col-lg-6 my-2">
@@ -260,7 +360,7 @@
             </div>
           </div>
         </section>
-        <section class="howTo1Container container p-5 shadow rounded">
+        <section class="howTo1Container container p-5 shadow rounded" id="howto">
           <div class="howTo1Content">
             <h2 class="text-center m-4">
               Since I NEED to buy a house ASAP, here’s the OFFER I’ll make you:
@@ -390,7 +490,7 @@
             </div>
           </div>
         </section>
-        <section class="testimonyContainer container p-5">
+        <section class="testimonyContainer container p-5"id="testimony">
           <div class="testimonyContent container mb-4">
             <div class="row">
               <div
@@ -548,7 +648,7 @@
         </section>
       </main>
 
-      <footer class="text-center text-white" style="background-color: #0a4275">
+      <footer class="text-center text-white" style="background-color: #0a4275" id="contact">
         <div class="container text-center p-4 pb-0">
           <section class="m-4">
             <img src="./assets/BPG Logo Full.png" class="w-25" alt="Logo" />
@@ -574,6 +674,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

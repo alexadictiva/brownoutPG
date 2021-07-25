@@ -26,10 +26,14 @@
 }
 body {
   overflow-x: hidden;
+
   background: var(--white);
   color: var(--fontColorPrimary);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font: var(--body1);
+}
+.wrapperMain {
+  max-width: 1024px;
 }
 img {
   max-width: 100%;
@@ -53,6 +57,89 @@ h5 {
   background-color: var(--bgColorSecondary);
 }
 /*header*/
+.logo {
+  width: 150px;
+}
+header {
+  height: 80px;
+}
+#navbar_main {
+  height: 100%;
+}
+.menuButton {
+  display: block;
+}
+.navbar-brand {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  #navbar_main {
+    height: 80px;
+  }
+  .menuButton {
+    display: none;
+  }
+}
+body.offcanvas-active {
+  overflow: hidden;
+}
+
+.offcanvas-header {
+  display: none;
+}
+
+.screen-darken {
+  height: 100%;
+  width: 0%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition: opacity 0.2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active {
+  z-index: 10;
+  transition: opacity 0.3s ease, width 0s;
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
+}
+
+/* ============ mobile view ============ */
+@media all and (max-width: 991px) {
+  .offcanvas-header {
+    display: block;
+  }
+
+  .mobile-offcanvas {
+    visibility: hidden;
+    transform: translateX(-100%);
+    border-radius: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1200;
+    width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .mobile-offcanvas.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .mobile-offcanvas .container,
+  .mobile-offcanvas .container-fluid {
+    display: block;
+  }
+}
 
 /*Banner slider*/
 .bannerContainer {
@@ -107,8 +194,6 @@ h5 {
   font-weight: bold;
 }
 
-/*how to 1 container*/
-
 /*founder container*/
 .founderContainer .card .row .col-md-8 {
   order: 2;
@@ -157,7 +242,6 @@ h5 {
     order: 1;
     width: 70%;
   }
-
   /*founder container*/
   .founderContainer .card .row .col-md-8 {
     order: 1;
