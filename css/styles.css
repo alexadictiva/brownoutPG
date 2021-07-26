@@ -18,7 +18,7 @@
   --button: bold 1.5rem/2rem var(--fontBase);
   --caption: normal 1.3rem/2.3rem var(--fontBase);
   --bgColorPrimary: #0f3b6f;
-  --bgColorSecondary: #e1cc0f;
+  --bgColorSecondary: #d3af50;
   --fontColorPrimary: rgb(72, 72, 72);
   --fontColorSecondary: white;
   --fontColorTertiary: #0f3b6f;
@@ -26,6 +26,7 @@
   --white: #ffffff;
   --black: #000000;
 }
+
 body {
   overflow-x: hidden;
   background: var(--white);
@@ -214,9 +215,21 @@ body.offcanvas-active {
 .founderContainer .card .row .col-md-4 {
   order: 1;
 }
+.founderContainer .card .row .col-md-4 h5 {
+  color: var(--white);
+}
+
+.founderContainer .card .row .col-md-8 .card-body p {
+  color: var(--white);
+}
 
 /*testimony container*/
-
+.testimonyCard {
+  background-color: var(--bgColorPrimary);
+}
+.testimonyCard .card-body .card-text {
+  color: var(--white);
+}
 .testimonyUser {
   width: 100px;
 }
