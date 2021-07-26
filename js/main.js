@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*slide 1*/
 const swiper = new Swiper(".swiper-container", {
-  direction: "vertical",
+  direction: "horizontal",
   loop: true,
 
   autoplay: {

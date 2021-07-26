@@ -34,7 +34,7 @@ body {
   font: var(--body1);
 }
 .wrapperMain {
-  max-width: 1024px;
+  /* max-width: 1024px;*/
 }
 img {
   max-width: 100%;
@@ -139,7 +139,7 @@ body.offcanvas-active {
     left: 0;
     height: 100%;
     z-index: 9;
-    width: 80%;
+    width: 60%;
     overflow-y: scroll;
     overflow-x: hidden;
     transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
