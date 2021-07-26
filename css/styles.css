@@ -66,11 +66,21 @@ header {
 #navbar_main {
   height: 100%;
 }
+.navbar-nav {
+  height: 90vh;
+}
 .menuButton {
   display: block;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
 .navbar-brand {
   display: none;
+}
+.nav-link {
+  color: var(--fontColorSecondary) !important;
 }
 @media screen and (min-width: 992px) {
   #navbar_main {
@@ -78,6 +88,9 @@ header {
   }
   .menuButton {
     display: none;
+  }
+  .navbar-nav {
+    height: 100%;
   }
 }
 body.offcanvas-active {
@@ -91,18 +104,18 @@ body.offcanvas-active {
 .screen-darken {
   height: 100%;
   width: 0%;
-  z-index: 30;
+  z-index: 7;
   position: fixed;
   top: 0;
   right: 0;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(34, 34, 34, 0.6);
+  background-color: rgba(34, 34, 34, 0.2);
   transition: opacity 0.2s linear, visibility 0.2s, width 2s ease-in;
 }
 
 .screen-darken.active {
-  z-index: 10;
+  z-index: 5;
   transition: opacity 0.3s ease, width 0s;
   opacity: 1;
   width: 100%;
@@ -124,7 +137,7 @@ body.offcanvas-active {
     top: 0;
     left: 0;
     height: 100%;
-    z-index: 1200;
+    z-index: 9;
     width: 80%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -146,7 +159,7 @@ body.offcanvas-active {
   height: 100vh;
 }
 .bannerContent {
-  z-index: 10;
+  z-index: 4;
   height: 100%;
   background-color: var(--overlay);
   color: var(--fontColorSecondary);

@@ -25,6 +25,9 @@
       <header class="section-header bgBlue px-4">
         <section>
           <div class="d-flex justify-content-between align-items-center">
+            <button class="menuButton" data-trigger="navbar_main" type="button">
+              <img src="./assets/menuIcon.svg" alt="Menu Icon" />
+            </button>
             <div class="d-lg-none">
               <img
                 src="./assets/BPG Logo Full.png"
@@ -32,9 +35,6 @@
                 alt="Logo"
               />
             </div>
-            <button class="menuButton" data-trigger="navbar_main" type="button">
-              Menu
-            </button>
           </div>
           <nav
             id="navbar_main"
@@ -42,7 +42,7 @@
           >
             <div class="container-fluid">
               <div class="offcanvas-header">
-                <button class="btn-close float-end"></button>
+                <button class="btn btn-danger float-end" onclick="closeMenu()">X</button>
               </div>
               <a class="navbar-brand" href="#">
                 <img
@@ -52,7 +52,7 @@
                 />
               </a>
 
-              <ul class="navbar-nav">
+              <ul class="navbar-nav justify-content-evenly">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">HOME </a>
                 </li>
@@ -118,7 +118,6 @@
               </li>
             </ul> -->
             </div>
-            
           </nav>
         </section>
       </header>
@@ -360,7 +359,10 @@
             </div>
           </div>
         </section>
-        <section class="howTo1Container container p-5 shadow rounded" id="howto">
+        <section
+          class="howTo1Container container p-5 shadow rounded"
+          id="howto"
+        >
           <div class="howTo1Content">
             <h2 class="text-center m-4">
               Since I NEED to buy a house ASAP, here’s the OFFER I’ll make you:
@@ -490,7 +492,7 @@
             </div>
           </div>
         </section>
-        <section class="testimonyContainer container p-5"id="testimony">
+        <section class="testimonyContainer container p-5" id="testimony">
           <div class="testimonyContent container mb-4">
             <div class="row">
               <div
@@ -648,7 +650,11 @@
         </section>
       </main>
 
-      <footer class="text-center text-white" style="background-color: #0a4275" id="contact">
+      <footer
+        class="text-center text-white"
+        style="background-color: #0a4275"
+        id="contact"
+      >
         <div class="container text-center p-4 pb-0">
           <section class="m-4">
             <img src="./assets/BPG Logo Full.png" class="w-25" alt="Logo" />

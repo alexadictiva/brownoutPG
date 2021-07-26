@@ -1,12 +1,16 @@
 /*header */
 function darken_screen(yesno) {
-  if (yesno == true) {
+  if (yesno) {
     document.querySelector(".screen-darken").classList.add("active");
   } else if (yesno == false) {
     document.querySelector(".screen-darken").classList.remove("active");
   }
 }
-
+function closeMenu() {
+  darken_screen(false);
+  document.querySelector(".mobile-offcanvas.show").classList.remove("show");
+  document.body.classList.remove("offcanvas-active");
+}
 function close_offcanvas() {
   darken_screen(false);
   document.querySelector(".mobile-offcanvas.show").classList.remove("show");
