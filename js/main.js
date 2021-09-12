@@ -59,7 +59,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 
   autoplay: {
-    delay: 3000,
+    delay: 2500,
     disableOnInteraction: false,
   },
   navigation: {
@@ -67,3 +67,5 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+/*Branch paralela*/
